@@ -66,7 +66,6 @@ app.get('/:shortUrl', async (req, res) => {
   }
 });
 
-// Utility function to check if a URL is valid
 function isValidUrl(url) {
   try {
     new URL(url);
