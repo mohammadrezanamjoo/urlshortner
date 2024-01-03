@@ -33,7 +33,6 @@ app.post('/shorten', async (req, res) => {
     let url = await Url.findOne({ originalUrl });
 
     if (!url) {
-      // Generate a short URL using shortid
       const shortUrl = shortid.generate();
 
       // Create a new URL entry in the database
