@@ -5,7 +5,6 @@ const shortid = require('shortid');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Connect to MongoDB
 mongoose.connect('mongodb://localhost/urlshortener', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
