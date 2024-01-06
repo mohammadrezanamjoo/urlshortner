@@ -46,7 +46,7 @@ app.post('/shorten', async (req, res) => {
   }
 });
 
-// Endpoint to expand a short URL
+
 app.get('/:shortUrl', async (req, res) => {
   const { shortUrl } = req.params;
 
