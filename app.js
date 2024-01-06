@@ -15,7 +15,6 @@ const urlSchema = new mongoose.Schema({
 
 const Url = mongoose.model('Url', urlSchema);
 
-// Middleware to parse JSON requests
 app.use(express.json());
 
 // Endpoint to shorten a URL
