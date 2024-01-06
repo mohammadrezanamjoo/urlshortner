@@ -8,7 +8,6 @@ const PORT = process.env.PORT || 3000;
 mongoose.connect('mongodb://localhost/urlshortener', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
-// Define URL schema
 const urlSchema = new mongoose.Schema({
   originalUrl: { type: String, required: true },
   shortUrl: { type: String, required: true, unique: true },
