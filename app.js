@@ -17,7 +17,6 @@ const Url = mongoose.model('Url', urlSchema);
 
 app.use(express.json());
 
-// Endpoint to shorten a URL
 app.post('/shorten', async (req, res) => {
   const { originalUrl } = req.body;
 
