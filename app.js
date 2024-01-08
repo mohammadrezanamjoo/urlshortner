@@ -50,7 +50,6 @@ app.get('/:shortUrl', async (req, res) => {
   const { shortUrl } = req.params;
 
   try {
-    // Find the original URL based on the short URL
     const url = await Url.findOne({ shortUrl });
 
     if (url) {
