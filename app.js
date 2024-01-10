@@ -25,7 +25,6 @@ app.post('/shorten', async (req, res) => {
   }
 
   try {
-    // Check if the URL is already in the database
     let url = await Url.findOne({ originalUrl });
 
     if (!url) {
