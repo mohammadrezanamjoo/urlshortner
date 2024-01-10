@@ -20,7 +20,6 @@ app.use(express.json());
 app.post('/shorten', async (req, res) => {
   const { originalUrl } = req.body;
 
-  // Check if the URL is valid
   if (!isValidUrl(originalUrl)) {
     return res.status(400).json({ error: 'Invalid URL' });
   }
